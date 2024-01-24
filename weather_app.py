@@ -11,8 +11,6 @@ from datetime import datetime
 import time
 import seaborn as sns
 
-
-
 import matplotlib.pyplot as plt
 
 API_KEY = '4254316d1ccf131f81e76d7ec009f94c'
@@ -437,7 +435,6 @@ st.title('Aplikacja pogodowa 🌡️')
 city = st.text_input("Wpisz miasto:", "Wroclaw", key='current_city')
 
 st.button('Znajdź pogodę', on_click=lambda: get_weather_info(API_KEY, city))
-
 
 if 'selected_day' not in st.session_state:
     st.session_state.selected_day = False
