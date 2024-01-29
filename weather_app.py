@@ -12,7 +12,6 @@ import time
 import seaborn as sns
 import matplotlib.pyplot as plt
 API_KEY = '4254316d1ccf131f81e76d7ec009f94c'
-
 def add_progress_bar():
     widget_container = st.empty()
     progress_bar = widget_container.progress(0)
