@@ -10,7 +10,7 @@ import seaborn as sns
 API_KEY = '4254316d1ccf131f81e76d7ec009f94c'
 
 
-# Function to get hourly forecast information for 4 days
+# Funkcja djaca info na 4 dni
 
 @st.cache_data
 def get_hourly_forecast(api_key, city_name):
@@ -29,13 +29,13 @@ def get_hourly_forecast(api_key, city_name):
     st.session_state.weather_data = weather_data['list']
 
 
-# Function to add a search to the search history
+# Funkcja dajaca wynik historii
 def add_to_history(search_history, city_in_history):
     if city_in_history not in search_history:
         search_history.append(city_in_history)
 
 
-# Function to display search history
+# Funkcja by zobazyc historie
 def display_search_history(search_history):
     st.subheader("Search History")
     for search_city in search_history:
