@@ -10,7 +10,7 @@ import seaborn as sns
 API_KEY = '4254316d1ccf131f81e76d7ec009f94c'
 
 
-# Funkcja djaca info na 4 dni
+# Funkcja djaca info na 4 dni.
 
 @st.cache_data
 def get_hourly_forecast(api_key, city_name):
